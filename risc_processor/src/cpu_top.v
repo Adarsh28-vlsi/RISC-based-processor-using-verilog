@@ -1,7 +1,3 @@
-// RISC Processor - Main CPU Implementation
-// A complete 16-bit RISC processor with instruction set architecture
-// See risc_processor/ directory for full project with all modules
-
 // Top-level CPU module
 // Integrates all processor components
 
@@ -139,37 +135,3 @@ module cpu_top (
     assign overflow_flag_out = overflow_flag;
 
 endmodule
-
-/*
-=== RISC PROCESSOR PROJECT SUMMARY ===
-
-This file contains the top-level CPU module. The complete project includes:
-
-📁 risc_processor/
-├── src/                    - All Verilog source modules
-├── testbench/             - Comprehensive test suite  
-├── scripts/               - Simulation automation
-├── docs/                  - Architecture documentation
-└── simulation/            - Generated simulation files
-
-🔧 KEY FEATURES:
-✅ 16-bit RISC architecture with 8 registers
-✅ Complete instruction set (16 instructions)
-✅ Harvard architecture (separate I/D memory)
-✅ Single-cycle execution
-✅ Comprehensive testbench with verification
-✅ Working simulation with sample programs
-
-🚀 TO RUN:
-cd risc_processor/scripts
-./run_simulation.sh
-
-📚 DOCUMENTATION:
-- README.md - Complete project overview
-- docs/architecture.md - Detailed architecture
-- docs/sample_programs.md - Example programs
-
-The processor successfully executes programs and demonstrates
-all major components of a RISC CPU including arithmetic, logic,
-memory, and control flow operations.
-*/
